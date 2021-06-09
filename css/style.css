@@ -12,4 +12,40 @@ button{
     color: #ffffff;
 }
 
+h4{
+    color: #46484c;
+}
+p{
+    color: #8b8b8bcc;
+}
+
+.header{
+    margin: 40px  20px 0px ;
+    font-size: 0;
+}
+
+.header > *{
+    display: inline-block;
+    font-size: 16px;
+}
+
+section{
+    margin: 258px 20px 0 20px;
+}
+
+li{
+    display: inline;
+}
+
+.logo{
+    width: 15%;
+}
+.navbar{
+    width: 70%;
+    text-align: center;
+}
+.action{
+    width: 15%;
+    text-align: center;
+}
 
