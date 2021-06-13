@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;900&display=swap" rel="stylesheet">
     <title>Matcha</title>
  
 </head>
@@ -18,11 +21,11 @@
         <nav class="navbar">
             <span>
                 <ul>
-                    <li><a href=""></a>Plataform</li>
-                    <li><a href=""></a>Pricing</li>
-                    <li><a href=""></a>Customers</li>
-                    <li><a href=""></a>Resource</li>
-                    <li><a href=""></a>About</li>
+                    <li class="menu-item"><a href="#">Plataform</a></li>
+                    <li class="menu-item"><a href="#">Pricing</a></li>
+                    <li class="menu-item"><a href="#">Customers</a></li>
+                    <li class="menu-item"><a href="#">Resource</a></li>
+                    <li class="menu-item"><a href="#">About</a></li>
                 </ul>
             </span>
         </nav>
@@ -32,12 +35,12 @@
             <button type="button">Start free trial</button>
         </div>
     </header>
-    <section>
+    <section class="main">
         <h1>Build your blog. Build your business.</h1>
         <h4> Instantly publish articles, drive more traffic, grow your email list, and
             see your blog’s impact on sales.</h4>
-        <form action="">
-            <input type="text" name="" id="">
+        <form action="" class="signup-form">
+            <input type="text" name="" id="" placeholder="Enter email address">
             <!--&rarr;(se agrega el icono de una flecha con direccion a la derecha)-->
             <button type="submit">Try it now &rarr;</button>
         </form>
@@ -45,10 +48,34 @@
             <br> 
             <strong>No credit card required.</strong>
         </p>
-        <figure>
-            <img src="/img/capterra.png" alt="">
+        <figure class="banner">
+            <img src="/img/capterra.png" alt="capterra">
         </figure>
-        <a href="productos.html">productos</a>
+        <figure class="intro">
+            <img src="/img/intro_group_image.png" alt="group">
+        </figure>
     </section>
+    <section class="promo">
+        <article class="explanatory-video">
+            <video controls poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+                <source type="video/webm" src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"/>
+                <source type="video/mp4" src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4">
+            </video>
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png" alt="See how it works">
+        </article>
+        <article class="publish">
+            <h3>Publish to your blog in minutes, not hours.</h3>
+            <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content 
+                that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your 
+                email list faster with our powerful conversion tool.</p>
+            <form class="mail"> 
+                <p>Start publishing today</p>
+                <div class="signup-form">
+                <input type="text" name="" id="" placeholder="Enter Email">
+                <button type="submit">Start My Trial</button>
+                </div>
+            </form> 
+         </article>
+     </section>
 </body>
 </html>
