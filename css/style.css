@@ -151,7 +151,9 @@ li{
     vertical-align: middle;
     border-style: none;
 }
-
+.publish{
+    width: 70%;
+}
 .publish h3{
     font-family: 'Alegreya', serif;
     font-size: 40px;
@@ -166,10 +168,6 @@ li{
     line-height: 1.5;
     margin-bottom: 10px;
     margin-top: 10px;
-}
-
-.publish > form{
-    display: flex;
 }
 
 .publish > form p {
@@ -195,16 +193,18 @@ li{
     align-items: center;
 }
 
-.promo > *{
-    width: 100%;
-}
 
 .publish > *{
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 .publish .signup-form{
     justify-content: end;
 }
 
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 660px;
+    grid-template-rows: repeat(2, 1fr);
+}
