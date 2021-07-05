@@ -62,6 +62,7 @@ section > p{
     margin-top: 258px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
 }
@@ -368,6 +369,9 @@ a + nav{
 
 .carousel-item .card{
     border-radius: 15px;
+    width: 370px; 
+    max-width: 100%;
+
 }
 
 
@@ -786,3 +790,95 @@ footer .signup-form{
 }
 
 
+@media only screen and (max-width:920px){
+ 
+    nav, .actions{
+        display: none;
+}
+
+@media only screen and (max-width:675px){
+    head + body{
+       width:100%;
+    }
+
+    .header{
+        display: block;
+        width: 100%;
+    }
+    .main{
+        margin-top: 100px;
+        display: block;
+    }
+    .main h1{
+        font-size: 35px;
+
+    }
+
+    .main h4{
+        font-weight: 100;
+    }
+
+    .signup-form > *{
+        width: 50%;
+    }
+
+    .banner img{
+        display: block;
+    }
+
+    .promo{
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        margin: 100px 0px;
+    }
+
+    .promo .explanatory-video{
+        margin: auto;
+        width: 100%;
+        display: block;
+
+
+    }
+
+    .promo .publish{
+        display: block;
+        width: 100%;
+    }
+
+    .succes-stories {
+        display:block;
+        padding: 0px;
+        
+    }
+
+    .succes-stories .overviews{
+        padding: 0px;
+        text-align: center;
+    }
+    .stories-carrousel{
+        align-content: center;
+        height: 800px;
+        margin: auto;
+    }
+
+
+    .succes-stories .stories-carrousel .card{
+        display: block;
+        width:80%;
+        margin: 100px auto;
+    }
+
+    .succes-stories .stories-carrousel .card-media img{
+      max-height: 100%;
+    }
+
+    .how-does-it-work .step{
+        display:block;
+        padding: 0px;
+    }
+    
+    .features{
+        display: block;
+    }
+}
