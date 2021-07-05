@@ -4,15 +4,15 @@
  margin: 0px;
 }
 
-body{
-    background-color: #fffbf7!important;
+head + body{
+    background-color: #fffbf7;
 }
-h1{
+.main h1{
     color: #025157;
     font-family: 'Alegreya', serif;
-    font-size: 60px !important;
-    margin-bottom: 0px;
-    font-weight: 900 !important;
+    font-size: 60px;
+    margin-bottom: 24px;
+    font-weight: 900;
     
 }
 
@@ -21,16 +21,17 @@ button{
     color: #ffffff;
 }
 
-main. h4{
+.main h4{
     color: #46484c;
     font-family: 'Slabo 27px', serif;
     font-weight: 400;
-    font-size: 20px !important;
-    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
 
 }
 section > p{
     color: #8b8b8bcc;
+    margin-top: 15px;
 }
 
 .header{
@@ -44,6 +45,8 @@ section > p{
     left: 0px;
     background-color: #fffbf7;
     align-items: center;
+    justify-content: space-between;
+
     z-index: 2;
 }
 
@@ -63,23 +66,21 @@ section > p{
     text-align: center;
 }
 
-ul{
-    padding: 0px;
+nav ul{
+    margin-bottom: 0px;
 }
+
 li{
     display: inline;
 }
 
 .logo{
     margin-left: 20px;
-    padding-top: 3px;
-
 }
-.navbar-complete{
-    width: 70%;
+a + nav{
     text-align: center;
     font-weight: 400;
-    margin: auto;
+    margin: auto20px;
     
 }
 
@@ -99,7 +100,8 @@ li{
     font-size: 14px;
     font-weight: 600;
     margin-right: 20px;
-    margin-bottom: 20px;
+
+    
     
 }
 
@@ -364,9 +366,15 @@ li{
     position: relative;    
 }
 
+.carousel-item .card{
+    border-radius: 15px;
+}
 
-.card-img-top{
+
+.card-media .card-img-top{
     max-height: 16vw;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .company{
@@ -387,9 +395,9 @@ li{
     max-width: 16vh;
 }
 
-.card-body .card-title {
+.card-body h4 {
     color:#025157 ;
-    font-size: 17px !important;
+    font-size: 17px;
     font-family: 'Slabo 13px', serif;
     font-weight: 600;
     line-height: 20px;
@@ -431,7 +439,9 @@ li{
 
 /*botones*/
 .button{
-    display: none !important;
+    position:relative;
+    right: 19px;
+    bottom: 500px;
 }
 
 
@@ -449,6 +459,10 @@ li{
     font-weight: 900;
     font-family: 'Alegreya', serif;
     margin-bottom: 8px;
+}
+
+.how-does-it-work .title h5{
+    font-size: 24px ;
 }
 
 .how-does-it-work .description{
@@ -608,7 +622,8 @@ li{
 
 .container-blog .card-text{
     color:#4a4a4a ;
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.5em;
     min-height: 6rem;
 }
 
@@ -617,6 +632,11 @@ li{
     width: 35px;
     height: 35px;
 }
+
+p + .card-text .read-more a{
+    text-decoration: underline;
+}
+
 
 .container-blog .card-body .author p{
     margin: auto 10px;
@@ -764,3 +784,5 @@ footer .signup-form{
     text-align: right;
     color:#4a4a4a ;
 }
+
+
